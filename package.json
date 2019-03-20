@@ -1,0 +1,25 @@
+{
+  "name": "myplaces",
+  "version": "1.0.0",
+  "description": "You can add markers on your map with a description of the place what you visited",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-fy/my_places.git"
+  },
+  "keywords": [
+    "map",
+    "markers",
+    "places",
+    "travels"
+  ],
+  "author": "Nastya Faizulina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/just-fy/my_places/issues"
+  },
+  "homepage": "https://github.com/just-fy/my_places#readme"
+}
