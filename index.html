@@ -20,53 +20,52 @@
         <h2 class="title header__second-title">Mark visited places on map</h2>
     </div>
 </header>
-<main class="form">
-    <div class="form-wrapper">
-        <label for="" class="form__caption">Place</label>
-        <input type="text" name="place" placeholder="Enter address"/>
-        <br>
+<main>
+    <form action="" method="post" class="form">
+        <div class="form-wrapper">
+            <label for="place" class="form__caption">Place
+                <input class="form__input" id="place" type="text" name="place" placeholder="Enter address"/>
+            </label>
 
-        <label for="meeting-time" class="form__caption">Date and time of your trip</label>
-        <input type="datetime-local" id="meeting-time"
-               name="trip-date" min="1900-06-07T00:00" max="2100-06-14T00:00">
-        <br>
+            <label for="meeting-time" class="form__caption">Date and time of your trip</label>
+            <input class="form__input" type="datetime-local" id="meeting-time"
+                   name="trip-date" min="1900-06-07T00:00" max="2100-06-14T00:00">
 
-        <label for="" class="form__caption">Duration</label>
-        <input type="text" name="duration" placeholder="Enter the number of days">
-        <br>
+            <label for="duration" class="form__caption">Duration</label>
+            <input class="form__input" id="duration" type="text" name="duration" placeholder="Enter the number of days">
 
-        <label for="" class="form__caption">Cost</label>
-        <input type="text" name="place" placeholder="How much did the trip cost?"/>
-        <select name="" id="">
-            <option value="rub">RUB</option>
-            <option value="usd">USD</option>
-            <option value="eur">EUR</option>
-            <option value="gbp">GBP</option>
-            <option value="chf">CHF</option>
-            <option value="jpy">JPY</option>
-        </select>
-        <br>
+            <label for="cost" class="form__caption">Cost</label>
+            <input class="form__input" id="cost" type="text" name="cost" placeholder="How much did the trip cost?"/>
+            <select name="currency" title="currency">
+                <option value="rub">RUB</option>
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="chf">CHF</option>
+                <option value="jpy">JPY</option>
+            </select>
 
-        <label for="" class="form__caption">Transport</label>
-        <select>
-            <option value="airplane">Airplane</option>
-            <option value="train">Train</option>
-            <option value="bus">Bus</option>
-            <option value="car">Car</option>
-            <option value="ship">Cruise ship</option>
-        </select>
-        <br>
+            <label for="transport" class="form__caption">Transport</label>
+            <select title="transport" name="transport" id="transport">
+                <option value="airplane">Airplane</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="car">Car</option>
+                <option value="ship">Cruise ship</option>
+            </select>
 
-        <label for="" class="form__caption">Impression</label>
-        <textarea name="comment" cols="30" rows="10" placeholder="Add your comment"></textarea>
-        <br>
+            <label for="impression" class="form__caption">Impression</label>
+            <textarea id="impression" name="comment" cols="40" rows="10" placeholder="Add your comment"></textarea>
+            <br>
 
-    </div>
+            <input type="submit" value="Add Marker" name="submit-info" formmethod="post">
+        </div>
+    </form>
 </main>
 <section class="map">
     <div id="mapid"></div>
 </section>
 
-<script src="js/map.js" ></script>
+<script src="js/map.js"></script>
 </body>
 </html>
