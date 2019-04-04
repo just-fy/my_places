@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
             integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
             crossorigin=""></script>
-    <title>My Places</title>
+    <!--<title>My Places</title>-->
 </head>
 <body>
 <header class="header">
@@ -19,9 +19,10 @@
         <h1 class="title header__main-title">My Places</h1>
         <h2 class="title header__second-title">Mark visited places on map</h2>
     </div>
+    <button class="header__button-toggle" onclick="openForm()">Open form</button>
 </header>
 <main>
-    <form action="" method="post" class="form">
+    <form action="http://localhost:63342/myPlaces/index.html" method="post" class="form" id="form">
         <div class="form-wrapper">
             <label for="place" class="form__caption">Place
                 <input class="form__input" id="place" type="text" name="place" placeholder="Enter address"/>
@@ -66,6 +67,10 @@
     <div id="mapid"></div>
 </section>
 
-<script src="js/map.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<!--<script type="text/javascript" src="js/markers.json"></script>-->
+<script type="text/javascript" src="js/httpclient.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+
 </body>
 </html>

@@ -14,9 +14,7 @@ window.onload = function () {
 
     const myIcon = L.icon({
         iconUrl: 'https://img.icons8.com/color/48/000000/place-marker.png',
-        iconSize: [48, 48],
-        iconAnchor: [-7, 10],
-        popupAnchor: [31, 0]
+        iconSize: [48, 48]
     });
 
     const marker = L.marker([51.5, -0.09], {icon: myIcon}).addTo(mymap);

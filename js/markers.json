@@ -1,0 +1,40 @@
+{
+  "marker": [
+    {
+      "address": "Likhachevskoye Shosse, 11а, Dolgoprudny, Moskovskaya oblast', 141707",
+      "place": "SHOP 'Korablik'",
+      "latitude": "55.940879",
+      "longitude": "37.490907",
+      "date": "01/04/2019 12:00",
+      "duration": "1 day",
+      "cost": "1500",
+      "currency": "RUB",
+      "transport": "Bus",
+      "comment": "Good kids shop. Bought gifts there"
+    },
+    {
+      "address": "Komsomolskaya Ulitsa, 9А, Dolgoprudny, Moskovskaya oblast', 141701",
+      "place": "CLINIC 'Kind Doctor'",
+      "latitude": "55.937073",
+      "longitude": "37.515813",
+      "date": "29/03/2019 10:00",
+      "duration": "1 day",
+      "cost": "150",
+      "currency": "USD",
+      "transport": "Car",
+      "comment": "Visited a doctor for a preventive examination"
+    },
+    {
+      "address": "Ulitsa Dirizhabelnaya, 26, Dolgoprudny, Moskovskaya oblast', 141704",
+      "place": "CAFE DodoPizza",
+      "latitude": "55.946444",
+      "longitude": "37.507806",
+      "date": "29/03/2019 10:00",
+      "duration": "1 day",
+      "cost": "150",
+      "currency": "USD",
+      "transport": "Car",
+      "comment": "Visited a doctor for a preventive examination"
+    }
+  ]
+}
