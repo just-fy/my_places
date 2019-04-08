@@ -1,3 +1,21 @@
+const changeButton = () => {
+    const button = document.querySelector('.button-toggle');
+    button.classList.toggle('button-toggle--active');
+};
+
+function toggleForm(){
+    const button = document.querySelector('.button-toggle');
+    if(button.classList.contains('button-toggle--active')){
+        console.log(2);
+        document.getElementById('form').style.width = '100%';
+        document.getElementById('form').style.height = '400px';
+    }
+    else{
+        document.getElementById('form').style.width = '0px';
+    }
+}
+
+
 const getHeight = elem => {
     elem.style.display = 'block'; // make element visible
     const height = elem.scrollHeight + 'px';
@@ -26,7 +44,6 @@ const hideElem = elem => {
         elem.classList.remove('is-visible');
     }, 350);
 };
-
 const toggle = elem => {
     if (elem.classList.contains('is-visible')) {
         hideElem(elem);

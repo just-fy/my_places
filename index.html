@@ -14,12 +14,11 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__logo"></div>
-    <div class="header__titles-wrapper">
-        <h1 class="title header__main-title">My Places</h1>
-        <h2 class="title header__second-title">Mark visited places on map</h2>
-    </div>
-    <button class="header__button-toggle">Open form</button>
+    <a href="index.html" class="header__link"><div class="header__logo"></div></a>
+    <h1 class="title header__main-title">My Places</h1>
+    <a href="#" class="button-toggle" onclick="changeButton(this); toggleForm(this);">
+        <span class="button-toggle_bowels"></span>
+    </a>
 </header>
 <main>
     <form action="http://84.201.145.232:8080/places" method="post" class="form" id="form">
@@ -62,11 +61,11 @@
             <input type="submit" value="Add Marker" name="submit-info" formmethod="post">
         </div>
     </form>
-</main>
-<section class="map">
-    <div id="mapid"></div>
-</section>
 
+    <section class="map">
+        <div id="mapid"></div>
+    </section>
+</main>
 <script type="text/javascript" src="js/map.js"></script>
 <!--<script type="text/javascript" src="js/markers.json"></script>-->
 <script type="text/javascript" src="js/httpclient.js"></script>

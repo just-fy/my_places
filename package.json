@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/just-fy/my_places#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
     "leaflet": "^1.4.0"
   }
 }
