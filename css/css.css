@@ -21,7 +21,7 @@ body {
     font-size: 25px;
 }
 .header__logo {
-    background: url("../images/transparent-map-marker-clip-art_281326.png");
+    background: url("../images/icons8-place-marker-96.png") no-repeat;
     width: 100px;
     height: 160px;
     display: inline-block;
@@ -39,8 +39,18 @@ body {
 }
 /* Form styles */
 .form {
+    display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+}
+.form.is-visible {
+    display: block;
     width: 300px;
+    height: auto;
     margin: 15px auto;
+    opacity: 1;
 }
 .form__caption {
     display: block;

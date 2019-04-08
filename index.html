@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
             integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
             crossorigin=""></script>
-    <!--<title>My Places</title>-->
+    <title>My Places</title>
 </head>
 <body>
 <header class="header">
@@ -19,10 +19,10 @@
         <h1 class="title header__main-title">My Places</h1>
         <h2 class="title header__second-title">Mark visited places on map</h2>
     </div>
-    <button class="header__button-toggle" onclick="openForm()">Open form</button>
+    <button class="header__button-toggle">Open form</button>
 </header>
 <main>
-    <form action="http://localhost:63342/myPlaces/index.html" method="post" class="form" id="form">
+    <form action="http://84.201.145.232:8080/places" method="post" class="form" id="form">
         <div class="form-wrapper">
             <label for="place" class="form__caption">Place
                 <input class="form__input" id="place" type="text" name="place" placeholder="Enter address"/>
